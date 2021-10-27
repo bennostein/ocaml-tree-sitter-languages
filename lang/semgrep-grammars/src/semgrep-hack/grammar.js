@@ -4,11 +4,7 @@
   Extends the standard hack grammar with semgrep pattern constructs.
 */
 
-// The npm package is 'tree-sitter-hacklang', not 'tree-sitter-hack',
-// because npm doesn't like the word 'hack'. See original note in the
-// project's readme.
-//
-const base_grammar = require('tree-sitter-hacklang/grammar');
+const base_grammar = require('tree-sitter-hack/grammar');
 
 module.exports = grammar(base_grammar, {
   name: 'hack',
