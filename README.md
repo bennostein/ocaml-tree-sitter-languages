@@ -23,15 +23,25 @@ Contributing
 
 ### Development setup
 
-1. Install [opam](https://opam.ocaml.org/doc/Install.html).
-2. Install [ocaml dev tools for your favorite
+1. Make sure you have at least 6 GiB of free memory. More will be
+   needed for some of the grammars.
+2. Install the following tools:
+   * git
+   * GNU make
+   * pkg-config: manages the installation of tree-sitter's runtime library
+   * Node.js: JavaScript interpreter used to translate a grammar to json
+   * cargo: Rust compiler used to build `tree-sitter`
+   * [opam](https://opam.ocaml.org/doc/Install.html): OCaml package manager
+3. Run `opam init`, `opam switch create 4.12.0` to install a recent
+   version of OCaml.
+4. Install [ocaml dev tools for your favorite
    editor](https://github.com/janestreet/install-ocaml):
    typically `opam install merlin` + some plugin for your editor.
-3. Install `pre-commit` with `pip3 install pre-commit` and run
+5. Install `pre-commit` with `pip3 install pre-commit` and run
    `pre-commit install` to set up the pre-commit hook.
    This will re-indent code in a consistent fashion each time you call
    `git commit`.
-4. Check out the [extra instructions for MacOS](doc/macos.md).
+6. Check out the [extra instructions for MacOS](https://github.com/returntocorp/ocaml-tree-sitter-core/blob/main/doc/macos.md).
 
 See the Makefile for the available targets. Get started with:
 ```
