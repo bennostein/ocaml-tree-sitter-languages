@@ -14,6 +14,7 @@ type t = private {
 }
 
 val info : t -> info
+val lines : t -> string array
 
 (* Return the number of lines (O(1)) *)
 val get_num_lines : t -> int

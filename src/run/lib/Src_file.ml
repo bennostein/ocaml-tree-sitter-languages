@@ -18,6 +18,7 @@ type t = {
 }
 
 let info x = x.info
+let lines x = x.lines
 
 let get_num_lines x = Array.length x.lines
 

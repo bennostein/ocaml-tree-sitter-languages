@@ -9,42 +9,14 @@
 # For example, both typescript and tsx are provided by tree-sitter-typescript.
 # The list below only shows typescript, not tsx.
 #
-SUPPORTED_TS_LANGUAGES = \
-  c \
-  c-sharp \
-  cpp \
-  go \
-  java \
-  javascript \
-  kotlin \
-  lua \
-  ocaml \
-  r \
-  ruby \
-  rust \
-  typescript
-
+SUPPORTED_TS_LANGUAGES = java
 # Includes all language variants e.g. typescript and tsx
-SUPPORTED_LANGUAGES = $(SUPPORTED_TS_LANGUAGES) tsx
+SUPPORTED_LANGUAGES = $(SUPPORTED_TS_LANGUAGES)
 
 # Languages which are set up to run parsing stats. Ideally, this is all
 # the supported languages. See the 'stat' target.
 #
-STAT_LANGUAGES = \
-  c \
-  c-sharp \
-  cpp \
-  go \
-  java \
-  javascript \
-  kotlin \
-  lua \
-  ocaml \
-  r \
-  ruby \
-  rust \
-  tsx \
-  typescript
+STAT_LANGUAGES = java
 
 # Build and test each language. Does not run parsing stats (see 'stat:').
 #
